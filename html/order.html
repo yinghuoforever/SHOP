@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="../css/order.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/details.css">
+	<link rel="stylesheet" href="../css/product.css">
+	<link rel="stylesheet" href="../css/personal.css">
+</head>
+<body>
+	<!-- 头部 -->
+		<div class="head_wraps">
+			<div class="head_tp_bar">
+			<div class="head">
+				<span class="adress_pic"></span>
+				<span class="adress"><a href="../index.html">1号店首页</a></span>
+				<div class="head_tit">
+					<ul class="hello">
+						<li><a href="login.html" target="_blank"><p class="rr">Hi,请 登录</p></a>
+							<a href="regist.html" target="_blank"><p class="reg">注册</p></a>		
+						</li>
+						<li><a href="order.html">
+							<span><svg class="icon headericon" aria-hidden="true">
+								  <use xlink:href="#icon-myorder"></use>
+								</svg></span>
+							<p>我的订单</p>
+						</a></li>
+						<li class="only">
+							<a href="javascript:void(0)">客户服务
+								<svg class="icon headericon" aria-hidden="true"> <use xlink:href="#icon-up-copy"></use></svg>
+							</a>
+							<ul class="hide">
+								<li>包裹跟踪</li>
+								<li>在线退换货</li>
+							</ul>
+						</li>
+						<li class="hd_qrcode">
+							<a href="javascript:void(0)">
+								<span><svg class="icon headericon" aria-hidden="true"> <use xlink:href="#icon-APP"></use></svg></span>
+								<p>APP下载</p>
+								<div class="hd_qrcode_bg">
+									<div class="triangle"></div>
+									<p>扫描二维码</p>
+									<p>下载1号店APP</p>
+									<a href="//app.yhd.com" target="_blank">
+									<img src="../images/index/qryhd.png">
+									</a>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			<div class="search_and_logo">
+				<img src="../images/details/details_logo.png" alt="" width="205px" height="110px">
+				<div class="search_box">
+					<div class="goods_search">
+						<div class="search_div">
+							<input class="hd_search_ipt" name="keyword"  type="text" value="" placeholder="买米面上1号店" original="买米面上1号店">
+							<button class="hd_search_bt"></button>
+						</div>
+					<!-- 购物车 -->
+						<div class="buy_car">
+							<em>13</em>
+							<a href="html/cart.html" target="_blank"><span><svg class="icon icon_car" aria-hidden="true"><use xlink:href="#icon-gouwuchekong"></use></svg></span>
+							<p class="car_name">购物车</p>
+							</a>
+						</div>								
+					</div>
+					<ul class="bars_one">
+						<a href=""><li>蛋糕</li></a>
+						<a href=""><li>黄酒</li></a>
+						<a href=""><li>坚果</li></a>
+						<a href=""><li>维达</li></a>
+						<a href=""><li>巴黎水</li></a>
+						<a href=""><li>连衣裙</li></a>
+						<a href=""><li>面膜</li></a>
+						<a href=""><li>调味品</li></a>
+						<a href=""><li>魅族</li></a>
+						<a href=""><li>鱼</li></a>	
+					</ul>
+				</div>
+			</div>
+			<div class="hd_cn_wrap">
+				<div class="hd_b">
+					<div class="btn_click">所有商品分类
+						<span><svg class="icon transicon" aria-hidden="true"><use xlink:href="#icon-xiangyou-copy1"></use></svg></span>
+						<div class="navs navs_fix">
+							<ul>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-quanqiujinkou"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">全球进口</p></a>					
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-shipinfushi"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">食品 / 酒 / 生鲜</p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-muying"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">母婴 / 玩具 / 童装</p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-qingjie"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">纸巾 / 厨卫清洁 / 宠物</p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-jiaju"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">家居家纺 / 厨具 / 家具</p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-meizhuang1"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">美妆 / 个人清洁 </p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-lianyiqun"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">女装 / 男装 / 内衣 / 珠宝</p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-iconfontbaobao"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">鞋靴 / 箱包 / 户外运动</p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-shoujishuma"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">手机 / 数码 / 电脑办公</p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-jiayongdianqi"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">家用电器 / 汽车用品 </p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-yiyaobaojian"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">医药 / 保健滋补 / 成人</p></a>
+								</li>
+								<li>
+									<span class="navs_ico_tip">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-tushu"></use></svg>
+									</span>
+									<a href=""><p class="navs_main">图书</p></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="product_box">
+						<ul>
+							<a href=""><li>1号抢购</li></a>
+							<a href=""><li>1号团</li></a>
+							<a href=""><li>领券中心</li></a>
+							<a href=""><li>充值中心</li></a>
+							<a href=""><li>全球进口</li></a>
+							<a href=""><li>1号生鲜</li></a>
+							<a href=""><li>美妆个护</li></a>
+							<a href=""><li>家居馆</li></a>
+							<a href=""><li>电器城</li></a>							
+						</ul>			
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="layout_mian personal_cont">
+			<div class="order_wrap">
+				<div class="cont_left">
+					<dl>
+						<dt>
+							<i><svg class="icon" aria-hidden="true"><use xlink:href="#icon-supplierorder"></use></svg></i>
+							<span>我的交易</span>
+						</dt>
+						<dd>1号店订单</dd>
+						<dd>我的预约</dd>
+						<dd>常购清单</dd>
+					</dl>
+					<dl>
+						<dt>
+							<i><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wujiaoxing"></use></svg></i>
+							<span>会员资料</span>
+						</dt>
+						<dd>我的联名卡</dd>
+						<dd>个人资料</dd>
+						<dd>地址管理</dd>
+						<dd>安全设置</dd>
+						<dd>实名认证
+							<span class="nav_label new_card">新升级</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<i><svg class="icon" aria-hidden="true"><use xlink:href="#icon-pinglun"></use></svg></i>
+							<span>我的评论</span>
+						</dt>
+						<dd>评论商品</dd>
+					</dl>
+					<dl>
+						<dt>
+							<i><svg class="icon" aria-hidden="true"><use xlink:href="#icon-jichutubiao_jiangli-copy"></use></svg></i>
+							<span>我的资产</span>
+						</dt>
+						<dd>我的金币</dd>
+						<dd>我的优惠券</dd>
+						<dd>我的礼品卡</dd>
+						<dd>我的余额</dd>
+					</dl>
+					<dl>
+						<dt>
+							<i><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shoucang"></use></svg></i>
+							<span>我的关注</span>
+						</dt>
+						<dd>关注商品</dd>
+					</dl>
+					<dl>
+						<dt>
+							<i><svg class="icon" aria-hidden="true"><use xlink:href="#icon-fuwu"></use></svg></i>
+							<span>我的服务</span>
+						</dt>
+						<dd>发票中心</dd>
+						<dd>在线退换货</dd>
+					</dl>
+				</div>
+				<div class="order_list_wrap">
+					<div class="tit_tab">
+						<span>最近订单</span>
+						<div>
+							<span>全部状态</span><u></u>
+							<div class="order_tab">
+								<p>全部订单</p>
+								<p>待付款订单2</p>
+								<p>待收货订单0</p>
+							</div>
+						</div>
+					</div>
+					<dl>
+						<dt>
+							<i class="list_radio"></i>
+							<div class="lists_info">
+								<span class="year">2018</span>
+								<span class="month">10/06</span><br>
+								<span class="price_sen">¥</span>
+								<span class="price_all">323.</span>
+								<span class="price_sen">90</span><br>
+								<span class="fukuan">在线支付</span>
+							</div>
+						</dt>
+						<dd>
+							<div class="order_list_items">
+								<div class="product_list">
+									<i></i>
+									<div class="border_link">
+										<span class="shop_name">1号店</span>
+										<i></i>
+										<span class="condition">等待付款</span>
+										<span class="carriage">您提交了订单，请等待系统确认</span>
+										<div class="lo_box">
+											<span class="lo_text">跟踪包裹</span>
+											<div class="lo_box_tit gz">
+												<div class="lo_info">
+													<i></i>
+													<div class="tips">
+														<i></i>
+														<p>您提交了订单，请等待系统确认</p>
+														<p>2018-9-22 09:52:37</p>
+													</div>
+													<p class="look_more">查看更多</p>
+												</div>
+											</div>
+										</div>										
+										<b class="people_tx"></b>
+										<span class="order_people">陈镇
+											<div class="people_info">
+												<div class="people_tit">
+													<i></i>
+													<p>陈镇</p>
+													<p>广东广州市黄埔区</p>
+													<p>187*****418</p>
+												</div>
+											</div>
+										</span>
+									</div>
+									<ul class="orderList">
+										<li>
+											<div class="puv">
+												<div class="puv_more">
+													<div class="puv_box">
+														<p>满199减120三只松鼠 蔓越莓曲奇100g 糕点点心薄脆饼干零食休闲零食饼干糕点办公室小吃 1袋装</p>
+														<img src="../images/index/product46.jpg" alt="" width="60px" height="60px" class="product_img">
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="puv">
+												<div class="puv_more">
+													<div class="puv_box">
+														<p>满199减120三只松鼠 蔓越莓曲奇100g 糕点点心薄脆饼干零食休闲零食饼干糕点办公室小吃 1袋装</p>
+														<img src="../images/index/product20.jpg" alt="" width="60px" height="60px" class="product_img">
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="puv">
+												<div class="puv_more">
+													<div class="puv_box">
+														<p>满199减120三只松鼠 蔓越莓曲奇100g 糕点点心薄脆饼干零食休闲零食饼干糕点办公室小吃 1袋装</p>
+														<img src="../images/index/product33.jpg" alt="" width="60px" height="60px" class="product_img">
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="item_right_tit">
+									<div class="item_right_top">
+										<span class="timer">22:05:16</span>
+										<span class="pay_on_now">立即支付</span>
+										<p class="order_d">订单详情</p>
+										<p class="order_cancels">取消订单</p>
+										<div class="order_cancel_box">
+											<div>
+												<a class="close_window" href="javascript:;">关闭</a>
+												<p>确定要取消订单？</p>
+												<span class="can">确定</span>
+												<span class="no_remove">取消</span>
+											</div>
+										</div>
+									</div>
+									<div class="item_right_bottom">
+										<p class="order_num">订单号:</p>
+										<p>803386975018</p>
+									</div>
+								</div>
+							</div>
+						</dd>
+						<dt>
+							<i class="list_radio"></i>
+							<div class="lists_info">
+								<span class="year">2018</span>
+								<span class="month">10/06</span><br>
+								<span class="price_sen">¥</span>
+								<span class="price_all">323.</span>
+								<span class="price_sen">90</span><br>
+								<span class="fukuan">在线支付</span>
+							</div>
+						</dt>
+						<dd>
+							<div class="order_list_items">
+								<div class="product_list">
+									<i></i>
+									<div class="border_link">
+										<span class="shop_name">1号店</span>
+										<i></i>
+										<span class="condition">等待付款</span>
+										<span class="carriage">您提交了订单，请等待系统确认</span>
+										<div class="lo_box">
+											<span class="lo_text">跟踪包裹</span>
+											<div class="lo_box_tit gz">
+												<div class="lo_info">
+													<i></i>
+													<div class="tips">
+														<i></i>
+														<p>您提交了订单，请等待系统确认</p>
+														<p>2018-9-22 09:52:37</p>
+													</div>
+													<p class="look_more">查看更多</p>
+												</div>
+											</div>
+										</div>										
+										<b class="people_tx"></b>
+										<span class="order_people">陈镇
+											<div class="people_info">
+												<div class="people_tit">
+													<i></i>
+													<p>陈镇</p>
+													<p>广东广州市黄埔区</p>
+													<p>187*****418</p>
+												</div>
+											</div>
+										</span>
+									</div>
+									<ul class="orderList">
+										<li>
+											<div class="puv">
+												<div class="puv_more">
+													<div class="puv_box">
+														<p>满199减120三只松鼠 蔓越莓曲奇100g 糕点点心薄脆饼干零食休闲零食饼干糕点办公室小吃 1袋装</p>
+														<img src="../images/index/product62.jpg" alt="" width="60px" height="60px" class="product_img">
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="puv">
+												<div class="puv_more">
+													<div class="puv_box">
+														<p>满199减120三只松鼠 蔓越莓曲奇100g 糕点点心薄脆饼干零食休闲零食饼干糕点办公室小吃 1袋装</p>
+														<img src="../images/index/product35.jpg" alt="" width="60px" height="60px" class="product_img">
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="item_right_tit">
+									<div class="item_right_top">
+										<span class="timer">22:05:16</span>
+										<span class="pay_on_now">立即支付</span>
+										<p class="order_d">订单详情</p>
+										<p class="order_cancels">取消订单</p>
+										<div class="order_cancel_box">
+											<div>
+												<a class="close_window" href="javascript:;">关闭</a>
+												<p>确定要取消订单？</p>
+												<span class="can">确定</span>
+												<span class="no_remove">取消</span>
+											</div>
+										</div>
+									</div>
+									<div class="item_right_bottom">
+										<p class="order_num">订单号:</p>
+										<p>803386975018</p>
+									</div>
+								</div>
+							</div>
+						</dd>								
+					</dl>
+					<div class="cell_turnPageBottomCenter">
+						<div class="fy">
+							<span class="page_start"></span>
+							<span class="page_cur">1</span>
+							<span class="page_end"></span>
+							<p>共1页 到第</p>
+							<input class="sum_text" type="text" value="" id="jumpto" >
+							<span class="confirm_btn">确定</span>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</section>
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="footer_t">
+				<ul class="footer_t_box">
+					<a href="javascript:void(0)">
+						<li>
+							<img src="../images/index/footer01.jpg" alt="">
+							<div class="footer-service">
+								<span>正品保障</span>
+								<p>正品行货&nbsp;放心选购</p>
+							</div>							
+						</li>
+					</a>
+					<a href="javascript:void(0)">
+						<li>
+							<img src="../images/index/footer02.jpg" alt="">
+							<div class="footer-service">
+								<span>满86元包邮</span>
+								<p>满86元&nbsp;免运费</p>
+							</div>
+						</li>
+					</a>
+					<a href="javascript:void(0)">
+						<li>
+							<img src="../images/index/footer03.jpg" alt="">
+							<div class="footer-service">
+								<span>售后无忧</span>
+								<p>7天无理由退货</p>
+							</div>
+						</li>
+					</a>
+					<a href="javascript:void(0)">
+						<li>
+							<img src="../images/index/footer04.jpg" alt="">
+							<div class="footer-service">
+								<span>准时送达</span>
+								<p>收货时间由你做主</p>
+							</div>
+						</li>
+					</a>
+				</ul>
+			</div>
+			<div class="footer_c">
+				<div class="footer_c_left">
+					<div class="left_all">
+						<span>新手入门</span><br>
+						<a href="javascript:void(0)">购物流程</a><br>
+						<a href="javascript:void(0)">会员制度</a><br>
+						<a href="javascript:void(0)">订单查询</a><br>
+						<a href="javascript:void(0)">发票制度</a><br>
+						<a href="javascript:void(0)">网站地图</a>
+					</div>
+					<div class="left_all">
+						<span>支付方式</span><br>
+						<a href="javascript:void(0)">货到付款</a><br>
+						<a href="javascript:void(0)">会员制度</a><br>
+						<a href="javascript:void(0)">订单查询</a><br>
+						<a href="javascript:void(0)">网站地图</a>
+					</div>
+					<div class="left_all">
+						<span>配送服务</span><br>
+						<a href="javascript:void(0)">配送进度查询</a><br>
+						<a href="javascript:void(0)">商品验货与签收</a>
+					</div>
+					<div class="left_all">
+						<span>售后保障</span><br>
+						<a href="javascript:void(0)">退换货政策</a><br>
+						<a href="javascript:void(0)">联系客服</a>
+					</div>
+				</div>
+				<div class="footer_c_right">
+					<div class="c_right_one">
+						<span>app更优惠</span><br>
+						<img src="../images/index/qryhd.png" alt="">
+					</div>
+					<div class="c_right_two">
+						<span>加微信查订单</span><br>
+						<img src="../images/index/quryh02.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="footer_b">
+				<p class="ft_footer_link">
+					<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备16050468号&nbsp;&nbsp;&nbsp;</a>
+					|
+					<a href="//cms.yhd.com/cms/view.do?topicId=16" target="_blank">&nbsp;&nbsp;&nbsp;经营证照&nbsp;&nbsp;&nbsp;</a>
+					|
+					<a href="//d9.yihaodianimg.com/N10/M05/00/A9/ChEi2lkQGRaAfaeeAAIhVwT2TYo18400.jpg" target="_blank">&nbsp;&nbsp;&nbsp;互联网药品信息服务资格证&nbsp;&nbsp;&nbsp;</a>
+					|
+					<a target="_blank">&nbsp;&nbsp;&nbsp;违法和不良信息举报电话：0527-88100253&nbsp;&nbsp;&nbsp;</a>
+					|
+					<a href="//d9.yihaodianimg.com/N11/M04/76/1C/ChEwoVnfFfeAfzKUAAg9urXNqaA12000.jpg" target="_blank">&nbsp;&nbsp;&nbsp;沪B2-20170039&nbsp;&nbsp;&nbsp;</a>
+					|
+					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502002939" target="_blank">&nbsp;&nbsp;&nbsp;沪公网安备 31010502002939号&nbsp;&nbsp;&nbsp;</a>
+					|
+					<a href="//seo.yhd.com/sitelink/sitelink.html" target="_blank">&nbsp;&nbsp;&nbsp;友情链接&nbsp;&nbsp;&nbsp;</a>
+					|
+					<a href="//cms.yhd.com/cms/view.do?topicId=105" target="_blank">&nbsp;&nbsp;&nbsp;出版物经营许可证</a>
+				</p>
+				<p>Copyright© 1号店网上超市 2007-2017，All Rights Reserved</p>
+				<div class="pics">
+					<ul>
+						<li>
+							<a href="http://net.china.com.cn/index.htm" target="_blank">
+								<img src="../images/index/index_bottom01.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="http://shwg.dianping.com/index.html" target="_blank">
+								<img src="../images/index/index_bottom02.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="http://www.shjbzx.cn" target="_blank">
+								<img src="../images/index/index_bottom03.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://search.szfw.org/cert/l/CX20150608010268010812" target="_blank">
+								<img src="../images/index/index_bottom04.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://ss.knet.cn/verifyseal.dll?sn=e13050631010040492h5mq000000&amp;ct=df&amp;a=1&amp;pa=500267" target="_blank">
+								<img src="../images/index/index_bottom05.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502002939" target="_blank">
+								<img src="../images/index/index_bottom06.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/order.js"></script>
+		<script src="../font/iconfont.js"></script>
+		<script src="../js/index.js"></script>
+		<script src="../font_oyd9d9atvik/iconfont.js"></script>
+</body>
+</html>

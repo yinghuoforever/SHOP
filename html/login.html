@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>1号店登录</title>
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="header_nav">
+			<a href="../index.html">
+				<img src="../images/others/loginlogo.jpg" alt="">
+			</a>
+			<div class="fr">
+				<span class="tip">您好，欢迎光临1号店！</span>
+				<a href="login.html" class="in">请登录</a>
+
+				<!-- 帮助中心（下拉菜单） -->
+				<div id="help_wrap">
+					<span class="bgtip"></span>
+					<a href="javascript:void(0)" class="fr_r">帮助中心</a>
+					<span class="bg_ico"></span>
+	                    <ul id="hd_menu_list">
+	                        <li>
+	                        	<a href="javascript:void(0)">包裹跟踪</a>
+	                        </li>
+	                       <li>
+	                        	<a href="javascript:void(0)">常见问题</a>
+	                        </li>    
+	                        <li>
+	                        	<a href="javascript:void(0)">在线退换货</a>
+	                        </li>
+	                        <li>
+	                        	<a href="javascript:void(0)">在线投诉</a>
+	                        </li> 
+	                    </ul>
+				</div>	
+
+			</div>
+		</div>
+	</div>
+	<!-- 登录 -->
+	<div class="login_wrap">
+		 <form name="reg" id="reg" method="post" onsubmit="return register()">
+			<div id="main">
+				<img src="../images/others/login.jpg" alt="">
+				<div id="main_right">
+					<div id="error_wrap">
+						<p id="error_tip"></p>
+					</div>
+					
+					<div class="form_tip">
+						<h3>1号店用户登录</h3>
+						<a href="regist.html">注册新账号</a>
+					</div>
+					<!-- 用户名 -->
+					<div class="form_name">
+						<span class="name_pic"></span>
+						<input type="text" name="user" id="user" class="input_name" placeholder="邮箱/手机/用户名">
+					</div>
+					<!-- 密码 -->
+					<div class="form_pwd">
+						<span class="pwd_pic"></span>
+						<input type="password" name="pwd" id="pwd" class="input_pwd" placeholder="密码">
+					</div>
+					<p class="check">
+					<!-- 自动登录 -->
+						<span class="chose"></span>
+						<a id="check_agreement" href="#" class="uncheck_agreement">自动登录</a>
+						<input id="autoLoginCheck" type="hidden">
+						<span id="agreement_tips" class="auto_tips" style="display: none;">请勿在公用电脑上启用</span>
+						
+						<a href="javascript:void(0)" target="_blank" class="forget_pwd" tabindex="-1">忘记密码？</a>
+						<p class="agement">点击登录，表示您同意1号店<a href="javascript:void(0)" class="blue_link" target="_blank">《服务协议及隐私声明》</a></p>
+						<!-- 点击登录 -->
+						 <input type="submit" value="登录" id="login_button" class="login_btn">
+
+					</p>
+					<div class="service_web">
+						<p>更多合作网站账号登录</p>
+						<div class="web">
+							<ul class="web_list">
+								<li>
+									<a href="https://passport.yhd.com/qq/login.do" target="_blank" class="iconfont_qq" title="QQ">
+										<svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq"></use></svg>
+									</a>
+								</li>
+								<li><a href="https://passport.yhd.com/jingdong/login.do" target="_blank" class="iconfont jingdong" title="京东"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-jingdong1"></use></svg></a></li>
+								<li><a href="https://passport.yhd.com/wechat/login.do" target="_blank" class="iconfont weixin" title="微信"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixin"></use></svg></a></li>
+								<li><a href="https://passport.yhd.com/sina/login.do" target="_blank" class="iconfont sina" title="新浪微博"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-logo-weibo"></use></svg></a></li>
+							</ul>						
+							<a href="javascript:void(0)" id="unfold" title="展开">更多合作网站<span class="web_more"></span></a>
+							<ul id="more_landing">
+								<li><a href="https://passport.yhd.com/alipay/login.do" target="_blank"><svg class="icon web" aria-hidden="true"><use xlink:href="#icon-zhifubao"></use></svg>支付宝</a></li>
+								<li><a href="https://passport.yhd.com/netease/login.do" target="_blank"><svg class="icon web" aria-hidden="true"><use xlink:href="#icon-wangyi"></use></svg>网易</a></li>
+								<li><a href="https://passport.yhd.com/baidu/login.do" target="_blank"><svg class="icon web" aria-hidden="true"><use xlink:href="#icon-icon-test"></use></svg>百度</a></li>
+								<li><a href="https://passport.yhd.com/renren/login.do" target="_blank"><svg class="icon web" aria-hidden="true"><use xlink:href="#icon-renrenwang-"></use></svg>人人网</a></li>
+								<li><a href="https://passport.yhd.com/wanlitong/login.do" target="_blank"><svg class="icon web" aria-hidden="true"><use xlink:href="#icon-pinganyinhang"></use></svg>平安万里</a></li>
+								<li><a href="https://passport.yhd.com/mogujie/login.do" target="_blank"><svg class="icon web" aria-hidden="true"><use xlink:href="#icon-mogujieicon"></use></svg>蘑菇街</a></li>
+							</ul>
+							<div class="login_switch">				               
+				                <a href="javascript:void(0)" class="two_dimension_code"></a>
+				            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="footer">
+		<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备16050468号&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+		<a>沪B2-20170039&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+		<a href="http://d7.yihaodianimg.com/N09/M07/BD/7B/ChEi11kJnKaAJQMrAAK-LnhML4o60600.jpg" data-ref="YHD_Footer_Licence" target="_blank">营业执照</a>
+		<p>Copyright © 1号店网上超市 2007-2017，All Rights Reserved</p>
+	</div>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/login.js"></script>
+	<script src="../font/iconfont.js"></script>
+</body>
+</html>

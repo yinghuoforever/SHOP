@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="../css/settle.css">
+		<link rel="stylesheet" href="../css/login.css">
+	</head>
+	<body>
+		<div class="new_adress_wrap">
+			<!-- 新增收货人信息 -->				
+			<form action="" method="post" id="form1">
+				<div class="add_wrap">
+					<span class="close">×</span>
+					<div class="add_title">      
+						<span>新增收货人信息</span>     
+					</div>
+					<div class="main">
+						<div class="type_div">
+							<em>*</em><span class="name">收货人</span>
+							<input type="text" maxlength="20" id="name">
+							<span class="error_massage" id="name_errtip">请您填写收货人姓名</span>
+						</div>
+						<div class="type_div">
+							<em>*</em><span class="name">手机号码</span>
+							<span class="telnum-prefix" id="span_consignee_areaCode">0086</span>
+							<span class="telnum-prefix-gap"></span>
+							<input type="text" maxlength="20" id="phone">
+							<span class="error_massage" id="phone_errtip">请您填写收货人手机号码</span>
+						</div>
+						<div class="type_div">
+							<em>*</em><span class="name">固定号码</span>
+							<span class="telnum-prefix" id="span_consignee_areaCode">0086</span>
+							<span class="telnum-prefix-gap"></span>
+							<input type="text" maxlength="20" id="fixed_phone">
+						</div>
+						<div class="type_div">
+							<em>*</em><span class="name">邮箱地址</span>
+							<input type="text" maxlength="20" id="email">
+						</div>
+						<div class="ftx-03">用来接收订单提醒邮件，便于您及时了解订单状态</div>
+						<div class="adress_div type_div">
+							<em>*</em><span class="name">所在地区</span>
+							<span id="span_province">
+								<select class="selt" id="consignee_province" name="consigneeParam.provinceId" onchange="" tabindex="2">
+									<option value="">请选择：</option>
+									<option value="1">北京</option>
+									<option value="2">上海</option>
+									<option value="3">天津</option>
+									<option value="4">重庆</option>
+									<option value="5">河北</option>
+									<option value="6">山西</option>
+									<option value="7">河南</option>
+									<option value="8">辽宁</option>
+									<option value="9">吉林</option>
+									<option value="10">黑龙江</option>
+									<option value="11">内蒙古</option>
+									<option value="12">江苏</option>
+									<option value="13">山东</option>
+									<option value="14">安徽</option>
+									<option value="15">浙江</option>
+									<option value="16">福建</option>
+									<option value="17">湖北</option>
+									<option value="18">湖南</option>
+									<option value="19">广东</option>
+									<option value="20">广西</option>
+									<option value="21">江西</option>
+									<option value="22">四川</option>
+									<option value="23">海南</option>
+									<option value="24">贵州</option>
+									<option value="25">云南</option>
+									<option value="26">西藏</option>
+									<option value="27">陕西</option>
+									<option value="28">甘肃</option>
+									<option value="29">青海</option>
+									<option value="30">宁夏</option>
+									<option value="31">新疆</option>
+								</select>
+							</span>
+							<span id="span_city">
+								<select class="selt" id="consignee_city" name="consigneeParam.cityId" onchange="loadCountys()" tabindex="3">
+									<option value="">请选择：</option>
+									<option value="1601">广州市</option>
+									<option value="1607">深圳市</option>
+									<option value="1609">珠海市</option>
+									<option value="1611">汕头市</option>
+									<option value="1617">韶关市</option>
+									<option value="1627">河源市</option>
+									<option value="1634">梅州市</option>
+									<option value="1643">惠州市</option>
+									<option value="1650">汕尾市</option>
+									<option value="1655">东莞市</option>
+									<option value="1657">中山市</option>
+									<option value="1659">江门市</option>
+									<option value="1666">佛山市</option>
+									<option value="1672">阳江市</option>
+									<option value="1677">湛江市</option>
+									<option value="1684">茂名市</option>
+									<option value="1690">肇庆市</option>
+									<option value="1698">云浮市</option>
+									<option value="1704">清远市</option>
+									<option value="1705">潮州市</option>
+									<option value="1709">揭阳市</option>
+								</select>
+							</span>
+							<span id="span_county">
+								<select class="selt" id="consignee_county" name="consigneeParam.countyId" onchange="loadTowns()" tabindex="4">
+									<option value="">请选择：</option>
+									<option value="51091">广州大学城</option>
+									<option value="3633">天河区</option>
+									<option value="3634">海珠区</option>
+									<option value="3635">荔湾区</option>
+									<option value="3637">越秀区</option>
+									<option value="36953">番禺区</option>
+									<option value="50256">花都区</option>
+									<option value="50258">白云区</option>
+									<option value="50259">南沙区</option>
+									<option value="50283">黄埔区</option>
+									<option value="50284">增城区</option>
+									<option value="50285">从化区</option>
+								</select>
+							</span>
+							<span class="error_massage" id="adress_errtip">请您填写完整的地区信息</span>
+						</div>
+						<div class="type_div">
+							<em>*</em><span class="name">详细地址</span>
+							<input type="text" maxlength="20" id="adress_all">
+							<span class="error_massage" id="adressAll_errtip">请您填写收货人详细地址</span>
+						</div>
+						<div class="type_div">
+							<em>*</em><span class="name">地址别名</span>
+							<input type="text" maxlength="20" id="another_name">
+							<span class="consignee-tag-info">建议填写常用名称</span>
+							<span class="consignee-tag-chose">家里</span>
+							<span class="consignee-tag-chose">父母家</span>
+							<span class="consignee-tag-chose">公司</span>
+						</div>
+						<div class="type_div">
+							<em>*</em><span class="name">默认地址</span>
+							<a href="javascript:;" id="consignee_address_default" class="set_default " onclick="setDefult()"><i class="dot"></i></a>
+						</div>
+						<div class="fl">
+							<a href="#none" class="btn-1"><span id="saveConsigneeTitleDiv">保存收货人信息</span></a>
+							<!-- <div class="loading loading-1"><b></b>正在提交信息，请等待！</div> -->
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="wrap">
+			<h1>
+				<a href="index.html"><img src="../images/others/logo_order.png" alt=""></a>
+				<a href="#"><img src="../images/others/logo_txt.png" alt=""></a>
+			</h1>
+			<!-- 收货地址 -->
+			<div class="adress_box">
+				<div class="information">
+					<p>收货信息</p>
+					<a href="#" class="new_adress">新建地址</a>
+				</div>
+				<div class="info_box">
+					<ul>
+						<li>
+							<div class="company">
+								<span></span>
+								<span>公司</span>
+							</div>
+							<p>陈镇<span>187****6418</span></p>
+							<p>广东 深圳市 南山区 </p>
+							<p>广东 深圳市 南山区 </p>
+							<span class="subtip"></span>
+						</li>
+						<li>
+							<div class="company">
+								<span></span>
+								<span>公司</span>
+							</div>
+							<p>陈镇<span>187****6418</span></p>
+							<p>广东 深圳市 南山区 </p>
+							<p>广东 深圳市 南山区 </p>
+							<span></span>
+						</li>
+					</ul>
+				</div>				
+			</div>
+			<!-- 支付方式 -->
+			<div class="payment">
+				<div class="information">
+					<p>支付方式</p>					
+				</div>
+				<div class="pay_list">
+					<p class="pay_on_delivery">货到付款
+						<span class="pay_bg"></span>
+					</p>
+					<p class="online_payments">在线支付
+						<span></span>
+					</p>
+				</div>
+			</div>
+			<!-- 配送清单 -->
+			<div class="account">
+				<div class="information">
+					<p>配送清单</p>
+					<a href="#">返回购物车修改</a>
+				</div>
+				
+				<div class="shop_list">
+					<div class="list_item">
+						<div class="account_left">
+							<p>配送方式</p>
+							<p><span></span>自营中小件</p>
+							<div class="third_party">第三方配送
+								<span></span>
+							</div>
+							<div class="time">
+								<span class="ftx-03">配送时间：</span>工作日、双休日与节假日均可送货
+							</div>
+						</div>
+						<div class="account_right">
+							<p>商家：1号店自营</p>
+							<ul class="shop_box">
+								<li>
+									<div class="infor_box">
+										<div>
+											<img src="../images/others/order_01.jpg" alt="">
+											<p>满199减120三只松鼠 真心棒100gx1盒</p>
+											<p>休闲零食小吃蛋卷夹心饼干黑白配 草莓</p>
+											<i class="odr_one"></i>
+											<span>不支持7天无理由退货</span>
+										</div>
+										<p class="sup">
+											<span class="sup_price">￥13.9</span>
+											<em>x1</em>
+											<span class="sup_have">有货</span>
+										</p>
+										<p class="pro_weight">0.220kg</p>
+									</div>
+								</li>
+								<li>
+									<div class="infor_box">
+										<div>
+											<img src="../images/others/order_02.jpg" alt="">
+											<p>满199减120三只松鼠 真心棒100gx1盒</p>
+											<p>休闲零食小吃蛋卷夹心饼干黑白配 草莓</p>
+											<i class="odr_two"></i>
+											<span>支持7天无理由退货</span>
+										</div>
+										<p class="sup">
+											<span class="sup_price">￥13.9</span>
+											<em>x1</em>
+											<span class="sup_have">有货</span>
+										</p>
+										<p class="pro_weight">0.220kg</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+						<div class="list_item">
+						<div class="account_left">
+							<p>配送方式</p>
+							<p><span></span>自营中小件</p>
+							<div class="third_party">第三方配送
+								<span></span>
+							</div>
+							<div class="time">
+								<span class="ftx-03">配送时间：</span>工作日、双休日与节假日均可送货
+							</div>
+						</div>
+						<div class="account_right">
+							<p>商家：1号店自营</p>
+							<ul class="shop_box">
+								<li>
+									<div class="infor_box">
+										<div>
+											<img src="../images/others/order_01.jpg" alt="">
+											<p>满199减120三只松鼠 真心棒100gx1盒</p>
+											<p>休闲零食小吃蛋卷夹心饼干黑白配 草莓</p>
+											<i class="odr_one"></i>
+											<span>不支持7天无理由退货</span>
+										</div>
+										<p class="sup">
+											<span class="sup_price">￥13.9</span>
+											<em>x1</em>
+											<span class="sup_have">有货</span>
+										</p>
+										<p class="pro_weight">0.220kg</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="add_tit">
+					<p>添加订单备注：</p>
+					<input maxlength="45" id="remarkText" onkeyup="cleanSpelChar(this)" placeholder="限45个字（定制类商品，请将购买需求在备注中做详细说明）" type="text">
+					<span>提示：请勿填写有关支付、收货、发票方面的信息</span>
+				</div>				
+			</div>
+			<!-- 发票信息 -->
+			<div class="bill">
+				<div class="information">
+					<p>发票信息</p>					
+				</div>
+				<p class="particulars">
+					<span>商品明细（普通发票）- 个人</span>
+					<span></span>
+				</p>
+			</div>
+			<!-- 资产抵扣 -->
+			<div class="property">
+				<div class="information">
+					<p>资产抵扣</p>	
+					<div class="same_module_rel">
+						<ul>
+							<li>
+								<span class="voucher_type">抵用券</span>
+								<span class="tiptxt">账户共有0张，本次使用0张</span>
+								<i class="arrows"></i>
+								<span class="fr_sp_totals">- ¥ 0.00</span>
+							</li>
+							<li>
+								<span class="voucher_type">1号金币
+									<i class="question_mark"></i>
+								</span>
+								<span class="tiptxt">账户共有0，最多可用0</span>
+								<input type="checkbox" class="check" id="use">使用
+								<span class="fr_sp_totals">- ¥ 0.00</span>
+							</li>
+							<li>
+								<span class="voucher_type">礼品卡
+									<i class="question_mark"></i>
+								</span>
+								<span class="tiptxt">当前余额¥0.00</span>
+								<span class="fr_sp_totals">- ¥ 0.00</span>
+							</li>
+							<li>
+								<span class="voucher_type">账户余额</span>
+								<span class="tiptxt">当前余额¥0.00,本次使用¥0.00</span>
+								<input type="checkbox" class="check" id="use_balance">使用余额
+								<span class="fr_sp_totals">- ¥ 0.00</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 结算 -->
+			<div class="settle">
+				<div class="left">
+					<p>陈镇<span>187****6418</span></p>
+					<div class="settle_adress">
+						<span></span>
+						<p>广东 广州市</p>
+					</div>
+				</div>
+				<div class="center">
+					<ul>
+						<li>商品金额</li>
+						<li>优惠</li>
+						<li>抵扣</li>
+						<li>运费</li>
+					</ul>
+					<ol>
+						<li>¥18.80</li>
+						<li>¥0.00</li>
+						<li>¥0.00</li>
+						<li>¥6.00</li>
+					</ol>
+				</div>
+				<div class="right">
+					<div class="right_tit">
+						<span>还需支付</span>
+						<span>¥24.80</span>
+					</div>
+					<div class="right_submit">
+						<input type="hidden">提交订单
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<footer>
+			<div class="footer">
+				<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备16050468号&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+				<a>沪B2-20170039&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+				<a href="http://d7.yihaodianimg.com/N09/M07/BD/7B/ChEi11kJnKaAJQMrAAK-LnhML4o60600.jpg" data-ref="YHD_Footer_Licence" target="_blank">营业执照</a>
+				<p>Copyright © 1号店网上超市 2007-2017，All Rights Reserved</p>
+			</div>
+		</footer>
+
+		<script src="../js/jquery.min.js"></script>		
+		<script src="../js/settle.js"></script>
+	</body>
+</html>

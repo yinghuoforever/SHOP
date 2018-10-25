@@ -1,0 +1,402 @@
+/*
+* @Author: hp
+* @Date:   2018-08-17 09:31:50
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-10-05 11:33:15
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+body{
+	font: 12px Arial,Helvetica,sans-serif;
+    color: #333;
+}
+a{
+	text-decoration: none;
+}
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+.qq,.jd,.weixin,.weibo{
+	font-size: 32px;
+}
+.web{
+	font-size: 17px;
+}
+.header{
+	height:80px;
+    background: #FFF;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 0px  10px -3px #aaa;
+}
+.header_nav{
+	width: 1192px;
+	height: 80px;
+	margin-right: auto;
+	margin-left:auto;
+}
+.header_nav img {
+	height:55px;
+    border: 0 none;
+	margin-top:16px;
+	cursor:pointer;
+}
+.fr{
+	width: 291px;
+	height: 60px;
+	margin-top:16px;
+	float: right;
+    line-height: 18px;
+    font-family: "SimSun";
+    color: #999;
+    clear:both;
+}
+.fr .in{
+	color: #06c
+}
+.fr .in:hover{
+	color: #ff6600;
+}
+.tip{
+	font-size: 12px;
+}
+#help_wrap{
+	width: 89px;
+	position: relative;
+    float: right;
+    padding: 0 6px;
+    margin-left: 20px;
+    cursor:pointer;
+}
+.bgtip{
+	width: 16px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+	background: url('../images/others/regist.png') no-repeat -343px 0;
+}
+.header a{
+	font-size:12px;
+	color:black;
+}
+.bg_ico{
+	width: 13px;
+	height: 11px;
+	display: inline-block;
+	float: right;
+	margin-top: 6px;
+	background:url('../images/others/regist.png') no-repeat right -30px;
+}
+#help_wrap a{
+	color: #333;
+}
+#help_wrap a:hover{
+	 color:#ff6600;
+}
+#hd_menu_list{
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    right: 0;
+    width: 98px;
+    padding-top: 21px;
+    border: 1px solid #ccc;
+}
+#hd_menu_list li{
+	border-bottom: 1px dotted #ccc;
+}
+#hd_menu_list li:nth-of-type(4){
+	border-bottom: none;
+}
+.login_wrap {
+	/* height: 427px; */
+	height: 558px;
+	padding:26px 0 0;
+    background: url('../images/others/regist_topshadow.png') repeat-x;
+}
+#main{
+	width: 980px;
+	/* height: 412px; */
+	height: 440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main img{
+	margin-top: 70px;
+}
+#main_right{
+	width: 400px;
+	margin-left: 70px;
+	float: right;
+	position: relative;
+}
+#error_wrap{
+	width: 330px;
+	height: 30px;
+	border: 1px solid #ccc;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	opacity:0;
+	background: #fff7d1 url('../images/others/login_new.png') no-repeat -324px -150px;
+}
+#error_tip{	
+	width: 295px;
+	float: right;
+	height:30px;
+	line-height:30px;	
+	color:#999;
+}
+.form_tip{
+	width: 330px;
+	height: 15px;
+	margin:10px auto 8px;
+	cursor: pointer;
+}
+.form_tip h3{
+	font-size:12px;
+    color: #666;
+    font-weight: bold;
+    float: left;
+}
+.form_tip a{
+	float: right;
+	color: #06c
+}
+.form_tip a:hover {
+    color: #f60;
+}
+.form_name{
+	width: 330px;
+	height: 52px;
+	border: 1px solid #dedede;
+	border-radius:4px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.name_pic{
+	background: url('../images/others/login_new.png') no-repeat -50px 4px;
+	width: 42px;
+	height: 24px;
+	display:block;
+	float: left;
+	margin:14px 0px 14px 18px;
+}
+.input_name{
+	width: 233px;
+	height: 20px;
+	margin:14px 0;
+	float: left;
+	border:0;
+	outline:0;
+}
+.form_pwd{
+	width: 330px;
+	height: 52px;
+	border: 1px solid #dedede;
+	border-radius:4px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:10px;
+	margin-bottom:15px;
+}
+.pwd_pic{
+	background: url('../images/others/login_new.png') no-repeat -150px 4px;
+	width: 42px;
+	height: 24px;
+	display:block;
+	float: left;
+	margin:14px 0px 14px 18px;
+}
+.input_pwd{
+	width: 233px;
+	height: 20px;
+	margin:14px 0;
+	border:0;
+	outline:0;
+	float: left;
+}
+.check{
+	width: 330px;
+	height: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.chose{
+	width: 12px;
+	height: 12px;
+	display:block;
+    float: left;
+    color: #999;
+    border:1px solid #ccc;
+    margin-right:5px;
+    cursor: pointer; 
+}
+.chose-bg{
+    background: url('../images/others/regist.png') no-repeat -347px -330px;
+}
+.chose:hover{
+	border-color: #ff875a;
+}
+.uncheck_agreement{
+	color: #999;
+}
+.auto_tips{
+	color:red;
+}
+#autoLoginCheck{
+	background:red;
+}
+.forget_pwd{
+ 	float: right;
+    color: #999;
+}
+.agement{
+	width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:12px;
+	display:none;
+}
+.login_btn {
+	display:block;
+    width: 330px;
+    height: 52px;
+    margin-top: 15px;
+    border: 0 none;
+    border-radius: 3px;
+    background: #ff3c3c;
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #ff7373;
+    font-family: "Microsoft YaHei";
+    line-height: 52px;
+    margin-left: auto;
+	margin-right: auto;
+}
+.service_web{
+	width: 330px;
+	/* height: 100px; */
+	height: 118px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+
+}
+ .service_web p {
+    color: #666;
+}
+.web{
+	border-radius: 50%;
+	margin-right: 2px;
+}
+.web_list{
+	float: left;
+	overflow: hidden;
+	margin-top: 12px;
+	width: 210px;
+}
+.web .web_list li{
+	border-radius: 50%;
+	margin-right: 20px;
+	float: left;
+	border-radius:50%;
+}
+.web .web_list>li>a{
+	display: block;
+	width: 32px;
+	height: 35px;
+	font-size: 32px;
+}
+.iconfont_qq{
+	 background:url('../images/others/login_web_icon/qq.png'); 
+	
+}
+.web_more{
+	width: 13px;
+	height: 10px;
+	border: 1px solid #ccc;
+	float: right;
+	margin-top: 11px;
+	background: url('../images/others/login_new.png') no-repeat -200px -1px;
+	margin-left: 6px;
+}
+#unfold{
+	float: left;
+	margin-top: 12px;
+	height: 35px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 35px;
+	float: right;
+	margin-right: 5px;
+	cursor:pointer;
+	color: #999;
+}
+#more_landing{
+	float: left;
+	margin-top: 10px;
+	display:none;
+	z-index: 99
+}
+#more_landing li{
+	float: left;
+	width: 82px;
+	height: 17px;
+	margin-bottom: 10px;
+}
+#more_landing li a{
+	width: 82px;
+	height: 17px;
+	line-height: 17px;
+	font-size: 12px;
+	color: #999;
+}
+.login_switch {
+	float: right;
+	width: 62px;
+	margin-top: -25px;
+	margin-right: -35px;
+}
+.login_switch a {
+    display: block;
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+    background: red;
+    background: url('../images/others/codeSwich.png') no-repeat -88px -88px;
+}
+footer{
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+	padding-top: 5px;
+	border-top: 1px solid #ccc;
+}
+.footer{
+	width: 980px;
+	height:70px;
+	margin-top: 19px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer a {
+    color: #333;
+    font-size:12px;
+}
+.footer a:hover {
+    color: #c00;
+}
+.footer p{
+	font-size:12px;
+	margin-top: 10px;
+    color: #333;
+}

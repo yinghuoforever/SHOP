@@ -1,0 +1,478 @@
+/*
+* @Author: Administrator
+* @Date:   2018-09-10 18:26:51
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-09-20 22:26:29
+*/
+body{
+	background: #e9e9e9;
+}
+.personal_nav_wrap{
+	width: 100%;
+	height: 90px;
+	background: #3f3d45;
+}
+.personal_nav_wrap .wrap{
+	width: 1228px;
+	height: 90px;
+	margin: 0 auto;
+}
+.mpc_header_logo {
+    float: left;
+    width: 145px;
+    height: 28px;
+    overflow: hidden;
+    margin-top: 31px;
+    outline: 0;
+    margin-right: 28px;
+}
+.personal_nav_wrap .navlist{
+	overflow: hidden;
+	float: left;
+	height: 90px;
+	width: 500px;
+}
+.personal_nav_wrap .navlist>li{
+	float: left;
+	height: 90px;
+	padding-left: 35px;
+	padding-right: 35px;
+	box-sizing: border-box;
+	line-height: 90px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.personal_nav_wrap .navlist>li:hover{
+	background: #46444b;
+}
+.navlist>li:hover .downlist{
+	opacity: 1;
+}
+.personal_nav_wrap .navlist>li:nth-of-type(1){
+	width: 104px;
+	background: #46444b;
+}
+.personal_nav_wrap .navlist>li:nth-of-type(2){
+	width: 161px;
+}
+.personal_nav_wrap .navlist>li:nth-of-type(3){
+	width: 116px;
+}
+.downlist{
+	position: absolute;
+	opacity: 0;
+	width: 161px;
+	padding-bottom: 20px;
+	margin-left: -35px;
+	background: #46444b;
+}
+.downlist>li{
+	height: 35px;
+	text-align: left;
+	line-height: 35px;
+	font-size: 12px;
+	font-family: "simsun";
+	padding-left: 35px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.downlist>li:hover{
+	background: #3f3d45;
+}
+.personal_nav_wrap .wrap .search{
+	width: 310px;
+	height: 34px;
+	border-radius: 2px;
+	float: right;
+	margin-top: 28px;
+	padding: 6px 10px;
+	box-sizing: border-box;
+	background: #46444b;
+}
+.wrap .search input{
+	width: 268px;
+	height: 16px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+.wrap .search span{
+	color: #666;
+	font-size: 15px
+}
+.personal_cont{
+	width: 1228px;
+	height: 778px;
+	margin: 22px auto 50px;
+}
+.personal_cont .cont_left{
+	float: left;
+	width: 175px;
+	background: #fff;
+}
+.personal_cont .cont_left dl{
+	position: relative;
+	float: right;
+	margin-bottom: 25px;
+	width: 123px;
+    font-family: "simsun";
+}
+.personal_cont .cont_left dl:nth-of-type(1){
+	margin-top: 34px;
+}
+.cont_left dl dt i{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: -3px;
+	left: -36px;
+	color: #ff3d3d;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: #ff3d3d;
+}
+dl>dt>span{
+	font-size: 14px;
+}
+.nav_label {
+	display: inline-block;
+    width: 42px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: #fff;
+    vertical-align: middle;
+}
+.cont_left dl dd{
+	color: #999;
+	height: 28px;
+	font-size: 12px;
+	line-height: 28px;
+	cursor: pointer;
+}
+.cont_left dl dd:hover{
+	color: red;
+}
+.personal_cont .cont_right{
+	float: right;
+	width: 1042px;
+	height: 623px;
+	background: #fff;
+}
+.personal_cont .cont_right .right_top{
+	width: 1042px;
+	height: 265px;
+}
+.personal_cont .cont_right .right_bottom{
+	width: 1042px;
+	height: 358px;
+}
+.user_base{
+	float: left;
+	padding-top: 14px;
+	box-sizing: border-box;
+	width: 340px;
+	height: 202px;
+	border-bottom: 1px solid #ccc;
+	background: url('../images/others/vipRankBg.png') 0px -202px;
+}
+.user_base .user_img{
+	float: left;
+	border-radius: 50%;
+	margin-left: 130px;
+	background: url('')
+}
+.user_base .user_infor{
+	float: left;
+	width: 340px;
+	text-align: center;
+	margin-top: 16px;
+	cursor: pointer;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+    font-family: "microsoft yahei";
+    font-size: 16px;
+}
+.user_base .user_infor:hover{
+	color: #ff4040;
+}
+.newvip{
+	float: left;
+	width: 64px;
+	height: 18px;
+	margin-top: 6px;
+	border-radius: 18px;
+	background: #ff4040;
+	color: #fff;
+	font-family: "microsoft yahei";
+    font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	margin-left: 137px;
+}
+.userPrivilege_wrap{
+	float: left;
+	width: 340px;
+	height: 20px;
+	margin-top:10px;
+}
+.userPrivilege{
+	display: inline-block;
+	width: 103px;
+	height: 20px;
+	margin-left: 119px;
+	border-radius: 18px;
+	background: #fee;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+.userPrivilege:hover{
+	color:  #ff4040;
+}
+.user_account_top{
+	float: right;
+	width: 692px;
+	height: 140px;
+}
+.user_account_coin{
+	float: left;
+	width: 213px;
+	height: 128px;
+}
+.user_account_num {
+    height: 50px;
+    padding-top: 28px;
+    text-align: center;
+    line-height: 50px;
+}
+.user_account_num .num {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    overflow: hidden;
+    padding-left: 38px;
+    color: #333;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-weight: bold;
+}
+.user_account_num .icon_labels {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 30px;
+    color: #ff3d3d;
+}
+.user_account_title {
+    height: 20px;
+    color: #666;
+    font-family: "simsun";
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.user_account_links {
+    display: inline-block;
+    position: relative;
+    height: 18px;
+    margin-top: 12px;
+    padding: 0 16px 0 10px;
+ 	border-radius: 18px;
+    line-height: 18px;
+    background-color: #fee;
+    color: #ff4040;
+    font-size: 12px;
+    margin-left: 68px;
+}
+.my_iconfont {
+    font-family: "my_iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+}
+.user_account_coupon{
+	float: left;
+	width: 200px;
+	height: 128px;
+}
+.user_account_canlander{
+	float: right;
+	width: 214px;
+	height: 136px; 
+	background: url('../images/others/canlendarBg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.user_account_date{
+    height: 30px;
+    padding: 0 14px 0 18px;
+    color: #ff3d3d;
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    line-height: 30px;
+}
+.user_account_date .fl{
+	float: left;
+}
+.user_account_date .fr{
+	float:right;
+	width: 36px;
+	height: 30px;
+}
+.sign_desk {
+	display: block;
+    width: 125px;
+    height: 30px;
+    margin: 23px auto 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background: #ff3d3d;
+    font-size: 12px;
+    line-height: 30px;
+}
+.user_sign_tips {
+    height: 18px;
+    padding-top: 5px;
+    color: #999;
+    font-family: "simsun";
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+}
+.user_account_bottom{
+	float: right;
+	margin-top: 12px;
+	width: 692px;
+	height: 39px;
+}
+.user_account_bottom .user_account_gift{
+	width: 212px;
+	height: 24px;
+	float: left;
+    color: #666;
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+}
+.yen{
+	font-family: "Century Gothic";
+}
+.user_account_gift b{
+    font-size: 16px;
+}
+.mao_orders_titles{
+	float: left;
+	width: 1042px;
+	height: 53px;
+	margin-top: 10px;
+}
+.user_account_safe {
+    float: right;
+    height: 24px;
+    padding-right: 20px;
+    color: #999;
+    font-family: "simsun";
+    font-size: 12px;
+    line-height: 24px;
+}
+.user_account_safe .title {
+    float: left;
+}
+.user_account_safe .progress_bar {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 12px;
+    margin-top: 6px;
+    border-radius: 2px;
+    background-color: #ffb155;
+}
+.safe_rank {
+    float: left;
+    padding: 0 10px 0 5px;
+    color: #ffb155;
+}
+.user_account_safe .icon_set {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    overflow: hidden;
+    color: #cdcdcd;
+    line-height: 16px;
+}
+.mao_orders_titles span{
+	float: left;
+	width: 96px;
+	height: 28px;
+	background: #ff3d3d;
+	border-radius: 12px;
+	margin-left: 20px;
+	margin-top: 12px;
+	text-align: center;
+	color: #fff;
+	line-height: 28px;
+	font-family: "microsoft yahei";
+    font-size: 14px;
+    cursor: pointer;
+}
+.empty_pic {
+    width: 209px;
+    height: 175px;
+    margin: 0 auto;
+}
+.empty_tips {
+    width: 290px;
+    margin: 30px auto 0;
+    padding-left: 30px;
+    color: #666;
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    text-align: center;
+}
+.empty_tips_title {
+    font-size: 18px;
+}
+.empty_tips_text {
+    margin-top: 24px;
+}
+.prism_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
+.prism_to_top .back_top {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #3f3e46;
+    border-radius: 2px;
+    color: #818088;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+}
+.prism_to_top .back_top:hover {
+    background-color: #ff3d3d;
+    color: #fff;
+}
+.user_account_title>a,.user_account_gift>a{
+	color: #333;
+}

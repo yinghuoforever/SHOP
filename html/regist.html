@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>注册1号店</title>
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="../css/regist.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="header_nav">
+			<a href="../index.html">
+				<img src="../images/others/loginlogo.jpg" alt="">
+			</a>
+			<div class="fr">
+				<span class="tip">您好，欢迎光临1号店！</span>
+				<a href="login.html" class="in">请登录</a>
+
+				<!-- 帮助中心（下拉菜单） -->
+				<div id="help_wrap">
+					<span class="bgtip"></span>
+					<a href="javascript:void(0)" class="fr_r">帮助中心</a>
+					<span class="bg_ico"></span>
+	                    <ul id="hd_menu_list">
+	                        <li>
+	                        	<a href="javascript:void(0)">包裹跟踪</a>
+	                        </li>
+	                       <li>
+	                        	<a href="javascript:void(0)">常见问题</a>
+	                        </li>    
+	                        <li>
+	                        	<a href="javascript:void(0)">在线退换货</a>
+	                        </li>
+	                        <li>
+	                        	<a href="javascript:void(0)">在线投诉</a>
+	                        </li> 
+	                    </ul>
+				</div>	
+
+			</div>
+		</div>
+	</div>
+	<!-- 注册 -->
+	<form name="reg" id="reg" method="post" onsubmit="return register()">
+	<div class="main_wrap">
+		<div class="main">
+			<h4>1号店注册</h4>
+			<ul>
+				<li>
+					<div class="input_wrap">
+						<input type="text" name="user" id="user" class="input_type">
+						<span class="tipall usertip">用户名</span>
+					</div>
+					<p class="user_error"></p>
+				</li>
+				<li>
+					<div class="input_wrap">
+						<input type="text" name="phone" id="number" class="input_type">
+						<span class="tipall numbertip">手机号</span>
+					</div>
+					<p class="number_error"></p>
+				</li>
+				<li>
+					<div class="input_wrap code">
+						<input type="text" name="note" id="verification" class="input_type">
+						<span class="tipall codetip">短信验证码</span>
+					</div>
+					<span class="get_code">获取验证码</span>
+					<p class="code_error"></p>
+				</li>
+				<li>
+					<div class="input_wrap">
+						<input type="text" name="user" id="pwd" class="input_type">
+						<span class="tipall pwdtip">设置密码</span>
+					</div>
+					<p class="pwd_error"></p>
+				</li>
+				<li>
+					<div class="input_wrap">
+						<input type="text" name="user" id="confirm" class="input_type">
+						<span class="tipall confirmtip">确认密码</span>
+					</div>
+					<p class="confirm_error"></p>
+				</li>
+			</ul>
+			<p class="agement">点击注册，表示您同意1号店<a href="javascript:void(0)" class="blue_link" target="_blank">《服务协议及隐私声明》</a></p>
+			<input type="submit" value="同意协议并注册" id="login_button" class="regist_btn">
+		</div>
+	</div>
+	</form>
+	<div class="footer">
+		<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备16050468号&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+		<a>沪B2-20170039&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+		<a href="http://d7.yihaodianimg.com/N09/M07/BD/7B/ChEi11kJnKaAJQMrAAK-LnhML4o60600.jpg" data-ref="YHD_Footer_Licence" target="_blank">营业执照</a>
+		<p>Copyright © 1号店网上超市 2007-2017，All Rights Reserved</p>
+	</div>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/regist.js"></script>
+</body>
+</html>

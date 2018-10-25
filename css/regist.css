@@ -1,0 +1,223 @@
+/*
+* @Author: hp
+* @Date:   2018-08-17 09:31:50
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-10-05 13:52:58
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+body{
+	font: 12px Arial,Helvetica,sans-serif;
+    color: #333;
+}
+a{
+	text-decoration: none;
+}
+.header{
+	height:80px;
+    background: #FFF;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 0px  10px -3px #aaa;
+}
+.header_nav{
+	width: 1192px;
+	height: 80px;
+	margin-right: auto;
+	margin-left:auto;
+}
+.header_nav img {
+	height:55px;
+    border: 0 none;
+	margin-top:16px;
+	cursor:pointer;
+}
+.fr{
+	width: 291px;
+	height: 60px;
+	margin-top:16px;
+	float: right;
+    line-height: 18px;
+    font-family: "SimSun";
+    color: #999;
+    clear:both;
+}
+.tip{
+	font-size: 12px;
+}
+.help_wrap{
+	width: 89px;
+	position: relative;
+    float: right;
+    padding: 0 6px;
+    margin-left: 20px;
+}
+.bgtip{
+	width: 16px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+	background: url('../images/others/regist.png') no-repeat -343px 0;
+}
+.header a{
+	font-size:12px;
+	color:black;
+}
+.bg_ico{
+	width: 13px;
+	height: 11px;
+	display: inline-block;
+	float: right;
+	margin-top: 6px;
+	background:url('../images/others/regist.png') no-repeat right -30px;
+}
+.hd_menu_list{
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    right: 0;
+    width: 98px;
+    padding-top: 21px;
+    border: 1px solid #ccc;
+    display:none;
+}
+.hd_menu_list li{
+	border-bottom: 1px dotted #ccc;
+}
+.hd_menu_list li:nth-of-type(4){
+	border-bottom: none;
+}
+.main_wrap{
+	margin-top:27px;
+	width: 1200px;
+	height: 500px;
+	background: url('../images/others/r_icon5.png') no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+}
+.main{
+	position: relative;
+    z-index: 150;
+    width: 330px;
+    margin: 0 auto;
+}
+h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+    color: #333;
+}
+.main li{
+	width: 530px;
+	height: 52px;
+	margin-bottom: 10px;
+}
+.main .agement{
+	width: 310px;
+	height: 52px;
+	float: left;
+	line-height:52px;
+}
+.user_error,.number_error,.code_error,.pwd_error,.confirm_error{
+	display: none;
+	float: left;
+	margin-left: 12px;
+	max-width: 165px;
+    line-height: 20px;
+    color: #666;
+    padding: 10px;
+    font-size: 12px;
+}
+.input_wrap{
+	position: relative;
+	width: 328px;
+	height: 50px;
+	float: left;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+.input_type{
+	position: relative;
+	width: 233px;
+	height: 20px;
+	margin:14px 0;
+	float: left;
+	left: 20px;
+	border: 0;
+    outline: 0;
+}
+#verification{
+	width: 154px;
+}
+.code{
+	width: 192px;
+}
+.get_code{
+	float: left;
+	width: 126px;
+	height: 50px;
+	background: #57565f;
+	margin-left: 10px;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+
+}
+.tipall{
+	position: absolute;
+    left: 20px;
+    top: 0px;
+    display: inline-block;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    color: #666;
+}
+.agement{
+	width: 330px;
+	margin-left: 10px;
+	margin-top:12px;
+}
+.regist_btn{
+	display:block;
+    width: 330px;
+    height: 52px;
+    margin-top: 15px;
+    border: 0 none;
+    border-radius: 3px;
+    background: #ff3c3c;
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #ff7373;
+    font-family: "Microsoft YaHei";
+    line-height: 52px;
+    margin-left: auto;
+	margin-right: auto;
+}
+.footer{
+	width: 980px;
+	height:38px;
+	margin-top: 19px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer a {
+    color: #333;
+    font-size:12px;
+}
+.footer a:hover {
+    color: #c00;
+}
+.footer p{
+	font-size:12px;
+	margin-top: 10px;
+    color: #333;
+}
